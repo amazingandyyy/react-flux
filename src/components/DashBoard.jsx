@@ -1,24 +1,20 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router';
 
-class NavBar extends Component {
+export default class DashBoard extends Component {
     render() {
         return (
             <nav>
-                <h1>Property App</h1>
+                <h1>ToDoApp - redux</h1>
                 <ul className="nav nav-pills text-center">
                     <li role="presentation">
                         <Link to="/">Home</Link>
                     </li>
                     <li role="presentation">
-                        <Link to="tenants">Tenents</Link>
-                    </li>
-                    <li role="presentation">
-                        <Link to="properties">properties</Link>
+                        <Link to="todo">todo</Link>
                     </li>
                 </ul>
             </nav>
         )
     }
 }
-export default NavBar;

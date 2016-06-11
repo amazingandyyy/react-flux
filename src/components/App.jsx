@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import NavBar from './NavBar';
+import DashBoard from './DashBoard';
 
-class App extends Component {
+export default class App extends Component {
   render() {
       return (
           <div className="container text-center">
-              <NavBar/>
+              <DashBoard/>
               <div className="container">
                   {this.props.children}
               </div>
@@ -13,4 +13,3 @@ class App extends Component {
       )
   }
 }
-export default App;
